@@ -3,3 +3,4 @@ pom.xml
 resources/public
 target
 .nrepl-port
+/boot.properties

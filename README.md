@@ -64,8 +64,7 @@ Big:
 ### Development
 
 - Install the [boot][3] build tool.
-- Play Lunar Lander with `boot lunar-lander`
-- Start an nREPL server with `boot nrepl`
+- Play Lunar Lander with `boot play`
 
 [1]: https://clojars.org/alandipert/hyperturbo/latest-version.svg?bustcache=000
 [2]: https://clojars.org/alandipert/hyperturbo
