@@ -6,6 +6,11 @@
  pom [:project 'alandipert/hyperturbo
       :version "0.0.1-SNAPSHOT"])
 
+(deftask build
+  "Build jar and install to local repo."
+  []
+  (comp (pom) (add-src) (jar) (install)))
+
 (deftask play
   "Play lunar lander"
   [] 
