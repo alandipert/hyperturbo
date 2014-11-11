@@ -68,4 +68,4 @@ Big:
 
 [1]: https://clojars.org/alandipert/hyperturbo/latest-version.svg?bustcache=000
 [2]: https://clojars.org/alandipert/hyperturbo
-[3]: https://github.com/tailrecursion/boot
+[3]: https://github.com/boot-clj/boot
