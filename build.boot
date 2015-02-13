@@ -1,15 +1,14 @@
 (set-env!
-  :dependencies '[[tailrecursion/boot.task "2.1.0"]]
-  :src-paths #{"src"})
+  :source-paths  #{"src"})
 
 (task-options!
- pom [:project 'alandipert/hyperturbo
-      :version "0.0.1-SNAPSHOT"])
+ pom {:project 'alandipert/hyperturbo
+      :version "0.0.1-SNAPSHOT"})
 
 (deftask build
   "Build jar and install to local repo."
   []
-  (comp (pom) (add-src) (jar) (install)))
+  (comp (pom) (jar) (install)))
 
 (deftask play
   "Play lunar lander"
