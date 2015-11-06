@@ -18,7 +18,7 @@
 (defmacro GET [name]
   `(get-in @*context* [:env '~name]))
 
-(defn run! []
+(defn run!! []
   (loop []
     (let [{:keys [program return program-counter]} @*context*]
       (if (not= return ::none)
@@ -45,4 +45,4 @@
                                   :return ::none
                                   :env {}
                                   :program-counter (ffirst program#)})]
-         (run!)))))
+         (run!!)))))
